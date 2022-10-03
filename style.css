@@ -1,11 +1,15 @@
 
 body,html{
-    background-color: #121215;
+    /* background-color: #121215; */
+    background-image: url(universe.gif);
+   
 }
 .heading{
-    color:white;
+  
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color: rgb(255, 202, 12);
+   box-shadow: 0 0 30px orange;
 }
 .solar-system {
     position: relative;
@@ -16,7 +20,7 @@ body,html{
     overflow: hidden;
   }
   .orbit{
-    border:1px dotted #666 ;
+    border:1px dotted rgb(186, 185, 185) ;
   }
   #sun,
 .orbit,
@@ -175,4 +179,13 @@ body,html{
   }
  .jupiter-spin{
     animation: spin-right 78.7s linear infinite;
- }  
+ } 
+
+ @keyframes bg {
+  0% {
+    scale: 1;
+  }
+  100%{
+    scale: 0.7;
+  }
+}
